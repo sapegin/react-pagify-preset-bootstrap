@@ -49,7 +49,7 @@ import segmentize from 'segmentize';
 
 Note that you need to use `active` class for the `centerPage` segment.
 
-Also note that you can use any library for pagination logic, [segmentize](https://www.npmjs.com/package/segmentize) is recommenede but not required.
+Also note that you can use any library for pagination logic, [segmentize](https://www.npmjs.com/package/segmentize) is recommended but not required.
 
 See [react-pagify documentation](https://github.com/bebraw/react-pagify/blob/master/README.md) for all available options.
 
