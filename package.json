@@ -2,7 +2,7 @@
   "name": "react-pagify-preset-bootstrap",
   "description": "Bootstrap preset for react-pagify",
   "author": "Artem Sapegin <artem@sapegin.ru>",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server",
