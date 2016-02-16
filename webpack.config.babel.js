@@ -38,6 +38,10 @@ const STYLE_ENTRIES = [
   'react-ghfork/gh-fork-ribbon.css',
   './demo/main.css'
 ];
+const RENDER_CONTEXT = {
+  ...pkg,
+  description: pkg.description.replace(/react-pagify/g, '<a href="https://github.com/bebraw/react-pagify">react-pagify</a>')
+};
 
 process.env.BABEL_ENV = TARGET;
 
@@ -89,10 +93,7 @@ if (TARGET === 'start') {
         template: 'lib/index_template.ejs',
 
         inject: false
-      }, renderJSX(__dirname, {
-        ...pkg,
-        description: pkg.description.replace(/react-pagify/g, '<a href="https://github.com/bebraw/react-pagify">react-pagify</a>')
-      }))),
+      }, renderJSX(__dirname, RENDER_CONTEXT))),
       new webpack.HotModuleReplacementPlugin()
     ],
     module: {
@@ -171,7 +172,7 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
         template: 'lib/index_template.ejs',
         inject: false
       }, renderJSX(
-        __dirname, pkg, RENDER_UNIVERSAL ? ReactDOM.renderToString(<App />) : '')
+        __dirname, RENDER_CONTEXT, RENDER_UNIVERSAL ? ReactDOM.renderToString(<App />) : '')
       )),
       new NamedModulesPlugin(),
       new webpack.optimize.DedupePlugin(),
