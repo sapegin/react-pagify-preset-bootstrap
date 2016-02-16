@@ -2,6 +2,8 @@
 
 This preset allows you to integrate [react-pagify](https://github.com/bebraw/react-pagify) with [Bootstrap 3](http://getbootstrap.com/).
 
+See [how it looks](http://sapegin.github.io/react-pagify-preset-bootstrap/).
+
 ## Installation
 
 ```bash
