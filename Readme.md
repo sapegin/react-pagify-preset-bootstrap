@@ -17,14 +17,19 @@ npm install --save react-pagify react-pagify-preset-bootstrap
 ```javascript
 import Paginator from 'react-pagify';
 import pagifyBootstrapPreset from 'react-pagify-preset-bootstrap';
+import segmentize from 'segmentize';
 
 ...
 
 <Paginator.Context
   {...pagifyBootstrapPreset}
-  segments={{
-    ...
-  }}
+  segments={segmentize({
+      pages,
+      page,
+      beginPages: 1,
+      endPages: 1,
+      sidePages: 3
+  })}
   onSelect={(newPage, event) => {
       event.preventDefault();
       onPageChange(newPage);
@@ -43,6 +48,8 @@ import pagifyBootstrapPreset from 'react-pagify-preset-bootstrap';
 ```
 
 Note that you need to use `active` class for the `centerPage` segment.
+
+Also note that you can use any library for pagination logic, [segmentize](https://www.npmjs.com/package/segmentize) is recommenede but not required.
 
 See [react-pagify documentation](https://github.com/bebraw/react-pagify/blob/master/README.md) for all available options.
 
