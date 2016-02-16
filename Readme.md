@@ -2,7 +2,7 @@
 
 This preset allows you to integrate [react-pagify](https://github.com/bebraw/react-pagify) with [Bootstrap 3](http://getbootstrap.com/).
 
-[![](http://wow.sapegin.me/3p452b1i3Z0d/Image%202016-02-16%20at%209.50.51%20AM.png)](http://sapegin.github.io/react-pagify-preset-bootstrap/)
+[![](http://wow.sapegin.me/2W0b2J2g0b2C/react-pagify.png)](http://sapegin.github.io/react-pagify-preset-bootstrap/)
 
 [Play with it](http://sapegin.github.io/react-pagify-preset-bootstrap/) on the demo page.
 
