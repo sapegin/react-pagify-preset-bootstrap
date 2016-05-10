@@ -51,7 +51,7 @@
     "webpack-merge": "~0.7.3"
   },
   "peerDependencies": {
-    "react": ">=0.13.* <1.0.0",
+    "react": ">=0.13.0",
     "react-pagify": ">=2.0.0"
   },
   "repository": {
